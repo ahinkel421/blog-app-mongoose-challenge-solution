@@ -66,7 +66,10 @@ describe('blogPost API resource', function() {
 				res.should.have.status(200);
 				res.body.posts.should.have.length.of.at.least(1);
 				return BlogPost.count();
-			});
+			})
+			.then(function(count) {
+          		res.body.posts.should.have.lengthOf(count);
+        	});
 		});
 		it('should return blog posts with right fields', function() {
 
