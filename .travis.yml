@@ -2,3 +2,10 @@ language: node_js
 node_js: node
 services:
 - mongodb
+deploy: 
+  provider: heroku
+  api_key:
+    secure: QCsdcbBhXKU5W3HXxP7JI0/rv4KgMzyC11/LDuMEqy/9vfu+y2Znp6Ia2zCbqKnQXKHYsTy+Z1pvQSzZvFcQmy9UHQ/vJPzKkGHROnLgOSYrcoY4mtB0oDR7aJ9yEdHUsmPnqGNykT5eyqttrzuY28QWdBe/q1laC9fBe0AWnsTdG91lYiTiFm1OoCdnr4wMXPIgB2SLVD/hlhbHew770lhV37NUQOJ1mCRh3q7C+2S0e97NYjndeNMVJBER4THYzxtuctJb+KNaMChS0bFUNS+EpA1N3V63mOpCgYLfUHRUJm8c49+IRhzA0yN6f8yUBqP7NvHfViG+lBDJkGyGJFamtFNJUcDHnfNt4TIDZHSiuOLK5XvKuTz9kPtxFmPAawRAyTUTqLIe82JePburMiyvLGJtV86fd+SBZGL0KeGtvTgnApO7JhBuBHq6QSH7LeBZcfaIk+9sfkQYxsNGeuLzgsM/Qu9GTzqh46KzE4sWDrLi3jzBUehsc3NCDfg4b8aZ6kkC0ETFT6BlXlqyXGFL+yo+mC6zI2mOk5idivrntLHHNycXOZ7JQNPAP/iyWRzpGd7ZvgM/Nv7rL0Ag7xVhKdRHH3wsVuSizNCN07YY0zZewofETjBZy3liRInXEk52ZCIfrZR01UltPXJ1X8sXA/byI4+yrAviMqSx0l4=
+  app: enigmatic-sands-37690
+  on:
+    repo: ahinkel421/blog-app-mongoose-challenge-solution
